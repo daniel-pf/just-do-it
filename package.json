@@ -1,0 +1,19 @@
+{
+  "name": "just-do-it",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-css": "node-sass --include-path app",
+    "watch-css": "node-sass -w app/ -o app/"
+  },
+  "devDependencies": {
+    "electron": "1.7.9",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "material-components-web": "^0.23.0"
+  }
+}
