@@ -1,19 +1,29 @@
 {
   "name": "just-do-it",
   "version": "0.1.0",
-  "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "build-css": "node-sass --include-path app",
-    "watch-css": "node-sass -w app/ -o app/"
+    "start": "electron ./dist/",
+    "start:dev": "webpack-dev-server --open",
+    "build": "webpack",
+    "clean:dist": "rm -rf dist",
+    "clean": "npm run clean:dist"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.2.0",
+    "css-loader": "^0.28.7",
     "electron": "1.7.9",
+    "file-loader": "^1.1.5",
+    "font-awesome-sass-loader": "^2.0.1",
     "node-sass": "^4.5.3",
-    "nodemon": "^1.12.1",
-    "webpack": "^3.8.1"
+    "resolve-url-loader": "^2.1.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
-    "material-components-web": "^0.23.0"
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.6"
   }
 }
