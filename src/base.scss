@@ -1,2 +1,5 @@
-@import 'custom';
-@import '~vue-material/src/core/stylesheets/core';
+@import '~vue-material/dist/vue-material.css';
+
+.main-content {
+  padding: 16px;
+}
